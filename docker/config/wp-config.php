@@ -26,16 +26,16 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'daigaku_db');
+define('DB_NAME', 'wordpress_db');
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'daigaku_user');
+define('DB_USER', 'wordpress_user');
 
 /** MySQL データベースのパスワード */
 define('DB_PASSWORD', 'passw0rd');
 
 /** MySQL のホスト名 */
-define('DB_HOST', 'kayac-daigaku-db');
+define('DB_HOST', 'sample-wordpress-db');
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define('DB_CHARSET', 'utf8');
