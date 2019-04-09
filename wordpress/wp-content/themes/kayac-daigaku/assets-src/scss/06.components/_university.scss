@@ -1,0 +1,39 @@
+.university {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+
+  &__title-area {
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__title {
+    font-family: $Mamelon-font;
+    font-size: 2.8rem;
+    font-weight: normal;
+  }
+
+  &__blue {
+    color: #1d50a2;
+  }
+
+  &__day {
+    font-family: $Mamelon-font;
+    font-size: 2rem;
+    text-indent: 0.2em;
+  }
+
+  &__sentence {
+    width: 70%;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+}

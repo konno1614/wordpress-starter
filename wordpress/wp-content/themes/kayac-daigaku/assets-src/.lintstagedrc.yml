@@ -1,0 +1,7 @@
+linters:
+  js/**/*.js:
+    - npm run format:js
+    - git add
+  scss/**/*.scss:
+    - npm run format:scss
+    - git add

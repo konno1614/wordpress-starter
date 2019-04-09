@@ -1,0 +1,165 @@
+.card {
+  &__wrapper {
+    position: relative;
+    display: block;
+  }
+
+  &__new {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transform: translate3d(-25%, -40%, 0);
+  }
+
+  &__img-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__img {
+    padding-top: 60%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 5px;
+    transform-origin: center center;
+  }
+
+  &__body {
+    margin-top: 1em;
+  }
+
+  &__time {
+    color: $color-text_green;
+    font-size: 1.4rem;
+  }
+
+  &__title {
+    margin: 0.5em 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    &--news {
+      position: relative;
+      overflow: hidden;
+      max-height: 3em;
+      font-size: 1.4rem;
+      word-wrap: break-word;
+
+      &::before {
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        background: #fff;
+        content: '...';
+      }
+
+      &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        content: '';
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    overflow: hidden;
+    max-height: 3em;
+    font-size: 1.4rem;
+    word-wrap: break-word;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: '...';
+    }
+
+    &::after {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      content: '';
+    }
+  }
+}
+
+.card--news {
+  .card {
+    &__body {
+      padding: 0 0.5em;
+    }
+  }
+}
+
+.card--top {
+  .card {
+    &__img {
+      padding-top: 66.6%;
+    }
+
+    &__title {
+      color: $color-text_green;
+    }
+
+    &__text {
+      &::after {
+        background-color: #ecf3e9;
+      }
+    }
+  }
+}
+
+.card--circle-detail {
+  .card {
+    &__tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 1.5em;
+    }
+
+    &__tag-type {
+      padding: 0 0.5em;
+      border: 1px solid #884658;
+      margin: 0 0.25em 0.25em 0;
+      border-radius: 0.5em;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.card--course {
+  .card {
+    &__img {
+      border-radius: 0;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &__title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__body {
+      padding: 1em;
+      margin-top: 0;
+      background-color: #fff;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
+
+.course__bg--02 .card--course .card__body {
+  border: 1px solid #ccc;
+  border-top: none;
+}
