@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package kayac-daigaku
+ * @package sample-wordpress
  */
 
 get_header();

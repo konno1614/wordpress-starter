@@ -6,7 +6,7 @@
  * @package WordPress
  */
 
-if ( ! function_exists( 'kayac_daigaku_setup' ) ) :
+if ( ! function_exists( 'sample_wordpress_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -14,7 +14,7 @@ if ( ! function_exists( 'kayac_daigaku_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function kayac_daigaku_setup() {
+	function sample_wordpress_setup() {
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
@@ -34,7 +34,7 @@ if ( ! function_exists( 'kayac_daigaku_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
     }
 endif;
-add_action( 'after_setup_theme', 'kayac_daigaku_setup' );
+add_action( 'after_setup_theme', 'sample_wordpress_setup' );
 
 /**
  * Enqueue scripts and styles.

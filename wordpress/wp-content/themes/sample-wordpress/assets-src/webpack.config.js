@@ -14,7 +14,7 @@ module.exports = {
   },
   output: {
     path: dist,
-    publicPath: '/wp-content/themes/kayac-daigaku/assets/',
+    publicPath: '/wp-content/themes/sample-wordpress/assets/',
     filename: `js/${filename}.js`,
   },
   resolve: {
