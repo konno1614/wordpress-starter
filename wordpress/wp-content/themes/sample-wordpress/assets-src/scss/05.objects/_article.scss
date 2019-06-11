@@ -1,0 +1,30 @@
+.o-article {
+  position: relative;
+  padding: 60px 0 70px;
+
+  &--news {
+    background-image: url(../img/common/bg-illust_left.png),
+      url(../img/common/bg-illust_right.png);
+    background-position: center left, top right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, auto;
+
+    @include media-breakpoint-down(sm) {
+      background-image: url(../img/common/bg-illust_left_sp.png),
+        url(../img/common/bg-illust_right_sp.png);
+      background-position: bottom left, top right;
+    }
+  }
+
+  &--circle {
+    background-image: url(../img/common/bg-illust_all.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    @include media-breakpoint-down(sm) {
+      background-image: url(../img/common/bg-illust_all_sp.png);
+      background-position: center bottom;
+    }
+  }
+}

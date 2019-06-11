@@ -1,0 +1,126 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.title-01 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0;
+  color: #483419;
+  font-family: $Mamelon-font;
+  font-size: 2.4rem;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-indent: 0.1em;
+  transform: translate(-50%, -50%);
+
+  @include media-breakpoint-down(sm) {
+    text-indent: 1em;
+  }
+
+  &::before {
+    position: absolute;
+    left: -60px;
+    display: inline-block;
+    content: url(../img/common/cloud-gray.png);
+    vertical-align: middle;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    right: -60px;
+    display: inline-block;
+    margin-left: 3%;
+    content: url(../img/common/cloud-gray.png);
+    vertical-align: middle;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}
+
+// 両橋の雲消す
+.title-02 {
+  margin-bottom: 70px;
+  color: #483419;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-indent: 0.1em;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 30px;
+  }
+
+  &::before {
+    display: inline-block;
+    margin-right: 1em;
+    content: url(../img/common/cloud-gray.png);
+    vertical-align: middle;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &::after {
+    display: inline-block;
+    margin-left: 1em;
+    content: url(../img/common/cloud-gray.png);
+    vertical-align: middle;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}
+
+// 両端の雲消さない
+.title-03 {
+  margin-bottom: 70px;
+  color: #483419;
+  font-size: 2.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-indent: 0.1em;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+
+  &::before {
+    display: inline-block;
+    margin-right: 1em;
+    content: url(../img/common/cloud-gray.png);
+    vertical-align: middle;
+
+    @include media-breakpoint-down(sm) {
+    }
+  }
+
+  &::after {
+    display: inline-block;
+    margin-left: 1em;
+    content: url(../img/common/cloud-gray.png);
+    vertical-align: middle;
+
+    @include media-breakpoint-down(sm) {
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.o-inner {
+  max-width: calc(1000px + 6rem);
+  padding: 0 3rem;
+  margin: 0 auto;
+
+  &--720 {
+    max-width: calc(720px + 6rem);
+    padding: 0 3rem;
+    margin: 0 auto;
+  }
+
+  &--650 {
+    max-width: calc(650px + 6rem);
+    padding: 0 3rem;
+    margin: 0 auto;
+  }
+
+  &--wide {
+    max-width: 1120px;
+    padding: 0 3rem;
+    margin: 0 auto;
+  }
+
+  &--small {
+    max-width: 860px;
+    padding: 0 3rem;
+    margin: 0 auto;
+  }
+
+  &--animation {
+    max-width: 1400px;
+    padding: 3rem;
+    margin: 0 auto;
+  }
+}
