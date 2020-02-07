@@ -1,0 +1,222 @@
+.o-side-bar {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  width: 60px;
+  flex-direction: column;
+  background-color: #edf9f3;
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
+  &__menu {
+    z-index: 9999;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3em;
+    margin-bottom: 1em;
+    background: linear-gradient(to bottom, #47a73e, #477f41);
+    border-radius: 0;
+
+    p {
+      position: absolute;
+      right: 0;
+      bottom: 15%;
+      left: 0;
+      margin: auto;
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-family: kan412typos-std, sans-serif;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      text-orientation: upright;
+      writing-mode: vertical-rl;
+    }
+  }
+
+  &__tel {
+    margin-bottom: 2em;
+  }
+
+  &__mail {
+    margin-bottom: 20%;
+  }
+
+  &__page-top {
+    position: relative;
+    display: block;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin: auto auto 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+
+    &::before {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      border-top: 2px solid #478e40;
+      border-right: 2px solid #478e40;
+      margin: auto;
+      content: '';
+      transform: rotate(-45deg);
+      vertical-align: middle;
+    }
+  }
+
+  &__hidden {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 2em 0;
+    background-color: rgba($color: #477e42, $alpha: 1);
+    opacity: 0;
+    overflow-y: scroll;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-out 0;
+    visibility: hidden;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    @keyframes show {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    &.is_active {
+      z-index: 99;
+      display: block;
+      animation: show 0.3s ease-in-out;
+      opacity: 1;
+      transform: translateY(0%);
+      visibility: visible;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+
+    &-inner {
+      min-width: auto;
+      max-width: calc(500px + 4rem);
+      padding: 0 2rem;
+      margin: 0 auto;
+    }
+
+    &-logo {
+      text-align: center;
+    }
+
+    &-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1em 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      margin-bottom: 2em;
+      color: #fff;
+
+      &--tel {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      &--mail {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      p {
+        font-family: kan412typos-std, sans-serif;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+
+    &-area {
+      padding-bottom: 1em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    &-list {
+      min-width: auto;
+      max-width: calc(400px + 4rem);
+      padding: 0 2rem;
+      margin: 0 auto;
+      color: #fff;
+    }
+
+    &-item {
+      margin-bottom: 2em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        font-size: 1.6rem;
+      }
+
+      span {
+        display: inline-block;
+        font-size: 1.4rem;
+        // text-indent: 1em;
+      }
+    }
+
+    &-sns-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1em;
+    }
+
+    &-sns-item {
+      margin: 0 1em;
+    }
+  }
+}

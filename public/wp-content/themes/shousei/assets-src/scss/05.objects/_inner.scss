@@ -1,0 +1,35 @@
+.o-inner {
+  min-width: auto;
+  max-width: calc(1000px + 120px);
+  padding: 0 60px;
+  margin: 0 auto;
+
+  @include media-breakpoint-down(sm) {
+    max-width: calc(1000px + 4rem);
+    padding: 0 2rem;
+  }
+
+  &--wide {
+    max-width: calc(1300px + 120px);
+
+    @include media-breakpoint-down(sm) {
+      max-width: calc(1300px + 4rem);
+    }
+  }
+
+  &--narrow {
+    max-width: calc(760px + 120px);
+
+    @include media-breakpoint-down(sm) {
+      max-width: calc(760px + 4rem);
+    }
+  }
+
+  &--works-interview {
+    max-width: calc(750px + 120px);
+
+    @include media-breakpoint-down(sm) {
+      max-width: calc(750px + 4rem);
+    }
+  }
+}

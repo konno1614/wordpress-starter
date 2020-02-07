@@ -1,0 +1,89 @@
+.o-footer {
+  padding: 3em 0 1em;
+  background-image: url(../img/common/bg-wood.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  @include media-breakpoint-down(md) {
+    padding-bottom: 60px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    background-image: none;
+  }
+
+  &__inner {
+    min-width: auto;
+    max-width: calc(1080px + 6rem);
+    padding: 0 3rem;
+    margin: 0 auto;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+    }
+  }
+
+  &__logo {
+    margin-bottom: 1em;
+
+    @include media-breakpoint-down(sm) {
+    }
+  }
+
+  &__sns-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+
+  &__sns-item {
+    margin: 0 1em;
+  }
+
+  &__link-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  &__link-item {
+    display: flex;
+    align-items: center;
+    padding-right: 1.5em;
+    font-size: 1.2rem;
+    line-height: 1;
+
+    @include media-breakpoint-down(sm) {
+    }
+
+    &::before {
+      display: inline-block;
+      width: 1px;
+      height: 1em;
+      margin-right: 1.5em;
+      background-color: #666666;
+      content: '';
+    }
+
+    &:first-child {
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  &__copyright {
+    color: #222222;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}

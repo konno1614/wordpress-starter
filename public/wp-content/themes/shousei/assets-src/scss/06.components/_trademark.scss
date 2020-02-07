@@ -1,0 +1,349 @@
+.c-trademark {
+  position: relative;
+  overflow: hidden;
+  $trademark_orange: #f7a421;
+  $trademark_orange_dark: #f78b21;
+  $trademark_orange_light: #daac64;
+
+  @include media-breakpoint-down(sm) {
+  }
+
+  br.pc-none {
+    display: none;
+
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
+
+  &__section {
+    position: relative;
+  }
+
+  &__inner {
+    padding-top: 3em;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 5em;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: $color-green;
+    font-size: 3rem;
+    font-weight: $font-mideum;
+  }
+
+  &__sub-title {
+    margin: 1em 0;
+    font-size: 3rem;
+    font-weight: $font-demilight;
+
+    @include media-breakpoint-down(sm) {
+      margin: 0.5em 0;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__text {
+    line-height: 2;
+  }
+
+  &__sec-title {
+    margin: 0;
+    color: $color-green;
+    font-size: 1.8rem;
+    font-weight: $font-black;
+  }
+  // 特徴
+  &__characteristic {
+    padding: 3em 0;
+
+    @include media-breakpoint-down(md) {
+      padding: 2em 0;
+    }
+  }
+
+  &__circle-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2em 0;
+
+    @include media-breakpoint-down(md) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__circle-item {
+    display: flex;
+    width: 175px;
+    height: 175px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    @include media-breakpoint-down(md) {
+      width: 140px;
+      height: 140px;
+      margin-bottom: 1em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &--yellow {
+      border: 10px solid #ffefa5;
+    }
+
+    &--orange {
+      border: 10px solid #ffdca5;
+    }
+  }
+
+  &__circle-text {
+    color: $trademark_orange;
+    font-size: 1.8rem;
+    font-weight: $font-black;
+    text-align: center;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__to-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__to-link {
+    width: 310px;
+    margin: 0 1em;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+      width: 300px;
+    }
+
+    a {
+      display: block;
+      padding: 0.5em 0;
+      background: linear-gradient(to bottom, #47a73e, #477f41) !important;
+      border-radius: 2em;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: $font-light;
+
+      @include media-breakpoint-down(sm) {
+      }
+    }
+
+    &--lecture {
+      @include media-breakpoint-down(md) {
+        margin-bottom: 1em;
+      }
+    }
+
+    &--voice {
+    }
+  }
+  // 料金表
+  &__price {
+    padding: 3em 0;
+
+    @include media-breakpoint-down(md) {
+      padding: 2em 0;
+    }
+  }
+
+  &__price-title {
+    margin-bottom: 0.5em;
+    color: $trademark_orange;
+    font-size: 1.8rem;
+    font-weight: $font-demilight;
+
+    span {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__price-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__table {
+    width: 48%;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+
+    table {
+      width: 100%;
+      border: 1px solid #e7ede7;
+      margin: 0 auto;
+      border-collapse: collapse;
+      font-size: 1.4rem;
+
+      span {
+        color: $trademark_orange;
+      }
+    }
+
+    th {
+      padding: 1em;
+      border: 1px solid #e7ede7;
+      background-color: #f5f8f6;
+      font-weight: $font-light !important;
+    }
+
+    td {
+      padding: 1em;
+      border: 1px solid #e7ede7;
+      background-color: #fff;
+      font-weight: $font-light !important;
+    }
+  }
+
+  &__caution {
+    width: 48%;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+
+    h5 {
+      margin: 0 0 1em;
+      font-size: 1.4rem;
+      font-weight: $font-light;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: $font-light;
+
+      span {
+        color: $trademark_orange;
+      }
+    }
+  }
+
+  // 流れ
+  &__flow {
+    padding: 3em 0;
+
+    @include media-breakpoint-down(md) {
+      padding: 2em 0;
+    }
+  }
+
+  &__flow-list {
+    margin-top: 2em;
+  }
+
+  &__flow-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+
+  &__box {
+    position: relative;
+    width: 27%;
+    padding: 0.5em 0;
+    background-color: $trademark_orange;
+    border-radius: 0.5em;
+    color: #fff;
+    text-align: center;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.4rem;
+    }
+
+    &:after {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      border: 10px solid transparent;
+      border-top: 10px solid $trademark_orange;
+      margin-left: -10px;
+      content: '';
+    }
+
+    &--double {
+      &:before {
+        position: absolute;
+        top: 100%;
+        left: 25%;
+        border: 10px solid transparent;
+        border-top: 10px solid $trademark_orange;
+        margin-left: -10px;
+        content: '';
+      }
+
+      &:after {
+        right: 25%;
+        left: auto;
+      }
+    }
+
+    &--dark {
+      background-color: $trademark_orange_dark;
+
+      &:after {
+        border-top: 10px solid $trademark_orange_dark;
+      }
+    }
+
+    &--light {
+      background-color: $trademark_orange_light;
+
+      &:after {
+        content: none;
+      }
+    }
+
+    &--last {
+      &:after {
+        content: none;
+      }
+    }
+  }
+
+  &--box-in {
+    display: flex;
+    width: 27%;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .c-trademark__box {
+      width: 48%;
+    }
+  }
+
+  &__box-text {
+    width: 70%;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.4rem;
+    }
+  }
+}

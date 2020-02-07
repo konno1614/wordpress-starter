@@ -1,0 +1,19 @@
+.c-404 {
+  text-align: center;
+
+  @include media-breakpoint-down(md) {
+    padding: 100px 0;
+  }
+
+  &__lead {
+    margin-bottom: 3em;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__back {
+    a {
+      color: $color-brand;
+    }
+  }
+}

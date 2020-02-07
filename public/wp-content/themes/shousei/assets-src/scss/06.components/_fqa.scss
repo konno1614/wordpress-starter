@@ -1,0 +1,80 @@
+.c-faq {
+  position: relative;
+  overflow: hidden;
+
+  &__section {
+    position: relative;
+    padding-bottom: 3em;
+  }
+
+  &__inner {
+    padding-top: 3em;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 5em;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: $color-green;
+    font-size: 3rem;
+    font-weight: $font-mideum;
+  }
+
+  &__text {
+    line-height: 2;
+  }
+
+  &__list {
+    margin-top: 3em;
+  }
+
+  &__item {
+    padding: 1em;
+    margin-bottom: 5em;
+    background-color: #fff;
+    box-shadow: 0px 3px 0px 0px rgba(71, 127, 65, 0.23);
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 2em;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__question {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 0 1em;
+    color: $color-green;
+    font-size: 1.4rem;
+    font-weight: $font-demilight;
+    line-height: 25px;
+
+    span.question {
+      display: inline-block;
+      width: 45px;
+      margin-right: 0.5em;
+      background-color: $color-green;
+      border-radius: 0.5em;
+      color: #fff;
+      text-align: center;
+    }
+
+    span.title {
+      display: inline-block;
+      width: 90%;
+    }
+  }
+
+  &__answer {
+    font-size: 1.4rem;
+    font-weight: $font-light;
+    line-height: 2;
+  }
+}

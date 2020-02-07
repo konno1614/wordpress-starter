@@ -1,0 +1,39 @@
+.o-header {
+  @include media-breakpoint-down(sm) {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  &__inner {
+    display: flex;
+    min-width: auto;
+    max-width: calc(1400px + 120px + 3rem);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px 0 3rem;
+    margin: 2em auto;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    margin: 0;
+    line-height: 0;
+
+    @include media-breakpoint-down(sm) {
+      width: 200px;
+      padding-left: 1rem;
+    }
+
+    @media (max-width: 374px) {
+      width: 160px;
+    }
+  }
+}

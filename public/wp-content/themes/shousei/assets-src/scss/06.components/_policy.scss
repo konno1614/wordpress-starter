@@ -1,0 +1,81 @@
+.c-policy {
+  position: relative;
+  overflow: hidden;
+
+  @include media-breakpoint-down(sm) {
+  }
+
+  &__section {
+    position: relative;
+  }
+
+  &__inner {
+    padding-top: 3em;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 5em;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: $color-green;
+    font-size: 3rem;
+    font-weight: $font-mideum;
+  }
+
+  &__text {
+    line-height: 2;
+  }
+
+  &__block {
+    padding: 2em 0;
+    font-size: 1.4rem;
+  }
+
+  &__sec-title {
+    color: $color-green;
+    font-size: 1.8rem;
+  }
+
+  &__sec-text {
+    line-height: 2;
+  }
+
+  &__list {
+    margin-top: 1em;
+  }
+
+  &__item {
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+    text-indent: -1em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 0.5em;
+      background: linear-gradient(to bottom, #47a73e, #477f41);
+      border-radius: 50%;
+      content: '';
+    }
+
+    &--icon-none {
+      margin-bottom: 1em;
+
+      &:before {
+        content: none;
+      }
+
+      span {
+        color: $color-green;
+      }
+    }
+  }
+}

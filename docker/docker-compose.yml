@@ -1,29 +1,38 @@
 version: '2'
 services:
-  sample-wordpress-db:
-    image: buddyingdevelopment/mysql:5.6
-    container_name: sample-wordpress-db
-    ports:
-      - "3306:3306"
-    volumes:
-      - ./db-data:/var/lib/mysql
-      - ./localhost.latest.sql:/docker-entrypoint-initdb.d/init.sql
-    environment:
-      MYSQL_ROOT_PASSWORD: passw0rd
-      MYSQL_DATABASE: wordpress_db
-      MYSQL_USER: wordpress_user
-      MYSQL_PASSWORD: passw0rd
-
-  sample-wordpress-web:
+  web:
     image: buddyingdevelopment/php:7.0-apache
-    container_name: sample-wordpress-web
+    container_name: shousei-web
     depends_on:
-      - sample-wordpress-db
+      - db
+      - smtp
     ports:
       - "80:80"
     volumes:
       - ./config/vhosts.conf:/etc/httpd/conf.d/vhosts.conf
-      - ../wordpress:/var/www/html
+      - ../public:/var/www/html
       - ./config/wp-config.php:/var/www/html/wp-config.php
     environment:
       PHP_XDEBUG: 'off'
+    working_dir: /var/www/html
+
+  db:
+    image: buddyingdevelopment/mysql:5.6
+    container_name: shousei-db
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./.db:/var/lib/mysql
+      - ./config/wordpress_dump.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: passw0rd
+      MYSQL_DATABASE: shousei_db
+      MYSQL_USER: shousei_user
+      MYSQL_PASSWORD: passw0rd
+
+  smtp:
+    image: schickling/mailcatcher
+    container_name: shousei-smtp
+    ports:
+      - "1080:1080"
+      - "1025:1025"
