@@ -1,4 +1,4 @@
-# starter
+# wordpress_starter
 
 ## local
 
@@ -31,6 +31,3 @@ npm run build # or yarn build
 `url()`で画像を指定する場合は、`wordpress/wp-content/themes/starter/assets-src/scss/style.scss`からの相対パス
 scss、jsで利用しない画像は`wordpress/wp-content/themes/starter/img`
 ```
-
-### メール送受信確認
-http://localhost:1080/
