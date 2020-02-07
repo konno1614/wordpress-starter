@@ -1,0 +1,9 @@
+@import '~bootstrap/scss/utilities';
+
+.mb-025 {
+  margin-bottom: 0.25em;
+}
+
+.text-gradation {
+  @include make-gradation-text();
+}

@@ -12,7 +12,9 @@
 get_header();
 ?>
 
-<p>フロントページです。</p>
+<div class="c-top">
+	フロントページです。
+</div>
 
 <?php
 get_footer();

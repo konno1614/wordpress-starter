@@ -1,0 +1,13 @@
+.pc-none {
+	display: none;
+	@include media-breakpoint-down(md) {
+		display: block;
+	}
+}
+
+.sp-none {
+	display: block;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}

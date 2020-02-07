@@ -1,0 +1,25 @@
+$spacer: 4em;
+$light: #eff4f3;
+$gray: #6a6a6a;
+$border: 1px solid $gray;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 750px,
+  lg: 992px,
+  xl: 1200px
+);
+$zindex-header: 900;
+
+$theme-colors: (
+  'blue': #1d50a2,
+  'blue-2': #174286,
+  'purple': #884658,
+  'brown': #483419,
+  'green': #2a581f,
+  'white': #fff,
+  'black': #000,
+  'cream': #f9f8ee,
+  'light-green': #ecf3e9,
+  'gray': #eeecea
+);

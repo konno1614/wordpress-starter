@@ -1,0 +1,201 @@
+// #擬似要素
+@mixin pseudo-element($content: '', $position: absolute, $display: block) {
+  position: $position;
+  display: $display;
+  content: $content;
+}
+
+/**
+usage:
+@include fadein-sentence($length: 10, $step: 0.1s, $delay: 2s);
+$lengthは文字数
+$stepは文字間の遅れる時間
+$delay全体の開始時間を遅らせる時間
+*/
+@mixin fadein-sentence($length: 10, $step: 0.3s, $delay: 0s) {
+  @for $i from 0 to $length {
+    &:nth-child(#{$i + 1}) {
+      transition-delay: ($delay + $step * $i);
+    }
+  }
+}
+
+@mixin make-gradation-text() {
+  $green: #9dd7a0;
+  $blue: #4bbae8;
+  $start: $green;
+  $end: $blue;
+
+  color: $blue;
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background: linear-gradient(90deg, $start, $end);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/**
+基本的にmake-gradation();とセットで利用する
+usage:
+@include make-no-gradation();
+*/
+@mixin make-no-gradation() {
+  $default: #6a6a6a;
+
+  position: relative;
+  border: 0;
+  border-right: 1px solid $default;
+  border-left: 1px solid $default;
+  background: none;
+  color: $default;
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $default;
+    content: '';
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/**
+基本的にmake-no-gradation();とセットで利用する
+usage:
+@include make-gradation();
+*/
+@mixin make-gradation() {
+  $green: #9dd7a0;
+  $blue: #4bbae8;
+  $start: $green;
+  $end: $blue;
+
+  position: relative;
+  border: 0;
+  border-right: 1px solid $end;
+  border-left: 1px solid $start;
+  background: none;
+  color: $blue;
+
+  @supports (-webkit-background-clip: text) and
+    (-webkit-text-fill-color: transparent) {
+    // safariだとグラデーションテキストが見えなくなるため子要素にも適用
+    &,
+    * {
+      background: linear-gradient(90deg, $start, $end);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, $start, $end);
+    content: '';
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@mixin make-color-button($basecolor) {
+  border-color: $basecolor;
+  color: $basecolor;
+  outline: none;
+
+  &.c-button--right {
+    &::after {
+      border-left-color: $basecolor;
+    }
+  }
+
+  &.c-button--left {
+    &::after {
+      border-right-color: $basecolor;
+    }
+  }
+
+  &.c-button--up {
+    &::after {
+      border-bottom-color: $basecolor;
+    }
+  }
+
+  &.c-button--down {
+    &::after {
+      border-top-color: $basecolor;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &.active,
+    &:focus,
+    &:hover {
+      background: $basecolor;
+      color: $white;
+      opacity: 1;
+
+      &.c-button--right {
+        &::after {
+          border-left-color: $white;
+        }
+      }
+
+      &.c-button--left {
+        &::after {
+          border-right-color: $white;
+        }
+      }
+
+      &.c-button--up {
+        &::after {
+          border-bottom-color: $white;
+        }
+      }
+
+      &.c-button--down {
+        &::after {
+          border-top-color: $white;
+        }
+      }
+    }
+  }
+}
+
+/**
+usage:
+@include delay-text-animation($text: ['a', 'b', 'c'], $delay: .5s) {
+*/
+@mixin delay-text-animation($texts, $delay: 0.5s) {
+  // 配列をループする記述
+  // indexを取る
+  @for $i from 0 to $length {
+    [data-text='#{char}'] {
+      animation-delay: $delay * $index;
+    }
+  }
+}
