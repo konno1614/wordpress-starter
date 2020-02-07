@@ -1,0 +1,16 @@
+.o-inner {
+	min-width: auto;
+	max-width: calc(1000px + 4rem);
+	padding: 0 2rem;
+	margin: 0 auto;
+	@include media-breakpoint-down(sm) {
+	}
+
+	&--wide {
+		max-width: calc(1400px + 4rem);
+	}
+
+	&--narrow {
+		max-width: calc(800px + 4rem);
+	}
+}

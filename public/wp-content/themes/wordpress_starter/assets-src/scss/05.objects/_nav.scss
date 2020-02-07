@@ -1,0 +1,6 @@
+.o-nav {
+	display: block;
+	@include media-breakpoint-down(md) {
+		display: none;
+	}
+}

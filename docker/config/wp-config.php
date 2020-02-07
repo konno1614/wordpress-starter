@@ -26,19 +26,19 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define('DB_NAME', 'wordpress_db');
+define( 'DB_NAME', 'starter_db' );
 
 /** MySQL データベースのユーザー名 */
-define('DB_USER', 'wordpress_user');
+define( 'DB_USER', 'starter_user' );
 
 /** MySQL データベースのパスワード */
-define('DB_PASSWORD', 'passw0rd');
+define( 'DB_PASSWORD', 'passw0rd' );
 
 /** MySQL のホスト名 */
-define('DB_HOST', 'sample-wordpress-db');
+define( 'DB_HOST', 'starter-db' );
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
-define('DB_CHARSET', 'utf8');
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
 define('DB_COLLATE', '');
@@ -52,14 +52,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '*XW<1qU,L@n#*TZRL1]j{1Vh|~}+u(DwLh=vds_=`ic<7iqQZ[2UvB/]6Oc/kXdh');
-define('SECURE_AUTH_KEY',  'NE)`0QL6B|MlrSrqG3pAk6`%^FR2-lZZJcC*1]*jqm&p2-k|jx$LTAYj-RJ0@j2_');
-define('LOGGED_IN_KEY',    '-d(#0|uV=mPQ9+8yG*5Gct$TWV2%i$oC>|V|+|d2YM(qw4$Vk1&H:Vp`NZb A:!c');
-define('NONCE_KEY',        '=#[>2a0(oA!GtLGP7,d$B83sd#+FCY@z[XmE(Th[f#V:lAL!lCXCkjenLvgDV$fL');
-define('AUTH_SALT',        '&^GJYO!+p3VUF!-qMM<V-BN^u#H|a#RAm8Q6^}+aA%NJ^M1Mdcj}7Dj_nH@*A-IY');
-define('SECURE_AUTH_SALT', 'mYmiD.o{j|^42Q}ZKXU+-~R@$i`[}|F8#@VKh}Et]gdG0^P3&b<8^&h(<}|9Oul|');
-define('LOGGED_IN_SALT',   'aLn^p/dKGF[}qL:V+?vV|?w^CR_9(]P)OyD(1rOp-4wGT>`J@=Gmq}>zJARG1jS-');
-define('NONCE_SALT',       'j @/,ke/O2*LAMIu2~]64V/}CPEbO]:Iqob!y4.-b_9BVW_89+1!$c*lKjb[iCPH');
+define('AUTH_KEY',         'Y|GM*x:UO_YdQ-3~`nHU=s6[/EPh<*:w(;Z]&;lg)IfdLG?EKw=faf_Dw D@Rd,T');
+define('SECURE_AUTH_KEY',  'unbk$i4tu}kmT?Q=_iTigf[PeiTobz#e,^1[CE6Xyg`.RavOA .2YJBdCFPXY@wg');
+define('LOGGED_IN_KEY',    '(6&QOOxcciD&pP)p! +cIp_f5UIc}ZWxd%Rz6Xf:@J%[9zl]yA@qCZz$8nPAS,}P');
+define('NONCE_KEY',        'wYZu%lTSUP/y|oug?741,s6r,k tS2oO$8Ku$n%QjBIn*8;;NaVj%iS*xoKymOc*');
+define('AUTH_SALT',        'sJ+j%-kQ=zdT);r4-6-e3}KJ@5K+2[7pb9J~*6PuN<[XEu^$O}|,Y#J`)1[5tc*Z');
+define('SECURE_AUTH_SALT', 'tTk8a.&-y@bh/&{B@qN7gErMV0L>uJ7?+Lg|<|WIc;Q.<+MO+O),lWZ0TazZ59&*');
+define('LOGGED_IN_SALT',   'bL<B[cm%GkhisHB`] +Si`X,UN8+99%_K:O`CQ5@V`>=x+r2u/mp%m|xK<?a|i^r');
+define('NONCE_SALT',       '|F-v`ds!2lcP5--A-Azvg}i06e,o#k4@eIGnaV~|QP5d-5.W?v7ib`g1/<>Q?G^J');
 
 /**#@-*/
 
@@ -69,7 +69,7 @@ define('NONCE_SALT',       'j @/,ke/O2*LAMIu2~]64V/}CPEbO]:Iqob!y4.-b_9BVW_89+1!
  * それぞれにユニーク (一意) な接頭辞を与えることで一つのデータベースに複数の WordPress を
  * インストールすることができます。半角英数字と下線のみを使用してください。
  */
-$table_prefix  = 'wp_';
+$table_prefix = 'wp_';
 
 /**
  * 開発者へ: WordPress デバッグモード
@@ -81,9 +81,9 @@ $table_prefix  = 'wp_';
  *
  * @link http://wpdocs.osdn.jp/WordPress%E3%81%A7%E3%81%AE%E3%83%87%E3%83%90%E3%83%83%E3%82%B0
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
-/* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */
+/* 編集が必要なのはここまでです ! WordPress でのパブリッシングをお楽しみください。 */
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
@@ -91,3 +91,7 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+// For starter
+define('FORM_CONTACT_ID', 'CF5deeefe2d1071');
+define('USE_MAIL_CATCHER', true);

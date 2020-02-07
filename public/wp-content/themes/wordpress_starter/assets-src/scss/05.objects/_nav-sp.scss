@@ -1,0 +1,6 @@
+.o-nav-sp {
+	display: none;
+	@include media-breakpoint-down(sm) {
+		display: block;
+	}
+}
