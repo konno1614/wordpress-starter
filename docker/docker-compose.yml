@@ -2,7 +2,7 @@ version: '2'
 services:
   web:
     image: buddyingdevelopment/php:7.0-apache
-    container_name: shousei-web
+    container_name: starter-web
     depends_on:
       - db
       - smtp
@@ -18,7 +18,7 @@ services:
 
   db:
     image: buddyingdevelopment/mysql:5.6
-    container_name: shousei-db
+    container_name: starter-db
     ports:
       - "3306:3306"
     volumes:
@@ -26,13 +26,13 @@ services:
       - ./config/wordpress_dump.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
       MYSQL_ROOT_PASSWORD: passw0rd
-      MYSQL_DATABASE: shousei_db
-      MYSQL_USER: shousei_user
+      MYSQL_DATABASE: starter_db
+      MYSQL_USER: starter_user
       MYSQL_PASSWORD: passw0rd
 
   smtp:
     image: schickling/mailcatcher
-    container_name: shousei-smtp
+    container_name: starter-smtp
     ports:
       - "1080:1080"
       - "1025:1025"

@@ -3,7 +3,7 @@
 --
 -- https://tableplus.com/
 --
--- Database: shousei_db
+-- Database: starter_db
 -- Generation Time: 2019-08-15 11:35:58.5650
 -- -------------------------------------------------------------
 
@@ -225,10 +225,10 @@ INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `c
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES ('1', 'siteurl', 'http://localhost', 'yes'),
 ('2', 'home', 'http://localhost', 'yes'),
-('3', 'blogname', 'shousei', 'yes'),
+('3', 'blogname', 'starter', 'yes'),
 ('4', 'blogdescription', 'Just another WordPress site', 'yes'),
 ('5', 'users_can_register', '0', 'yes'),
-('6', 'admin_email', 'shousei@example.com', 'yes'),
+('6', 'admin_email', 'starter@example.com', 'yes'),
 ('7', 'start_of_week', '1', 'yes'),
 ('8', 'use_balanceTags', '0', 'yes'),
 ('9', 'use_smilies', '1', 'yes'),
@@ -262,8 +262,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 ('37', 'gmt_offset', '0', 'yes'),
 ('38', 'default_email_category', '1', 'yes'),
 ('39', 'recently_edited', '', 'no'),
-('40', 'template', 'shousei', 'yes'),
-('41', 'stylesheet', 'shousei', 'yes'),
+('40', 'template', 'starter', 'yes'),
+('41', 'stylesheet', 'starter', 'yes'),
 ('42', 'comment_whitelist', '1', 'yes'),
 ('43', 'blacklist_keys', '', 'no'),
 ('44', 'comment_registration', '0', 'yes'),
@@ -339,9 +339,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 ('124', 'widget_akismet_widget', 'a:1:{s:12:\"_multiwidget\";i:1;}', 'yes'),
 ('130', 'sm_rewrite_done', '$Id: sitemap-loader.php 937300 2014-06-23 18:04:11Z arnee $', 'yes'),
 ('133', 'siteguard_config', 'a:33:{s:18:\"show_admin_notices\";s:1:\"1\";s:25:\"admin_filter_exclude_path\";s:41:\"css,images,admin-ajax.php,load-styles.php\";s:19:\"admin_filter_enable\";s:1:\"0\";s:16:\"renamelogin_path\";s:11:\"login_03255\";s:18:\"renamelogin_enable\";s:1:\"1\";s:14:\"captcha_enable\";s:1:\"1\";s:13:\"captcha_login\";s:1:\"1\";s:15:\"captcha_comment\";s:1:\"1\";s:18:\"captcha_lostpasswd\";s:1:\"1\";s:18:\"captcha_registuser\";s:1:\"1\";s:16:\"same_login_error\";s:1:\"1\";s:16:\"loginlock_enable\";s:1:\"1\";s:18:\"loginlock_interval\";s:1:\"5\";s:19:\"loginlock_threshold\";s:1:\"3\";s:17:\"loginlock_locksec\";s:2:\"60\";s:19:\"loginlock_fail_once\";s:1:\"0\";s:20:\"fail_once_admin_only\";s:1:\"1\";s:17:\"loginalert_enable\";s:1:\"1\";s:21:\"loginalert_admin_only\";s:1:\"1\";s:18:\"loginalert_subject\";s:43:\"%SITENAME%にログインがありました\";s:15:\"loginalert_body\";s:208:\"%DATE% %TIME%に%USERNAME%がログインしました。\n\n== ログイン情報 ==\nIPアドレス：%IPADDRESS%\nリファラー：%REFERER%\nユーザーエージェント：%USERAGENT%\n\n--\nSiteGuard WP Plugin\";s:21:\"disable_xmlrpc_enable\";s:1:\"0\";s:23:\"disable_pingback_enable\";s:1:\"1\";s:23:\"waf_exclude_rule_enable\";s:1:\"0\";s:16:\"waf_exclude_rule\";a:0:{}s:13:\"notify_wpcore\";s:1:\"1\";s:14:\"notify_plugins\";s:1:\"2\";s:13:\"notify_themes\";s:1:\"2\";s:8:\"notified\";a:3:{s:4:\"core\";s:0:\"\";s:6:\"plugin\";a:0:{}s:5:\"theme\";a:0:{}}s:15:\"last_check_time\";d:1565858889;s:21:\"updates_notify_enable\";s:1:\"1\";s:7:\"ip_mode\";s:1:\"0\";s:7:\"version\";s:5:\"1.4.3\";}', 'yes'),
-('147', 'current_theme', 'shousei', 'yes'),
+('147', 'current_theme', 'starter', 'yes'),
 ('148', 'theme_switched', '', 'yes'),
-('149', 'theme_mods_shousei', 'a:2:{s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
+('149', 'theme_mods_starter', 'a:2:{s:18:\"nav_menu_locations\";a:0:{}s:18:\"custom_css_post_id\";i:-1;}', 'yes'),
 ('150', 'category_children', 'a:0:{}', 'yes'),
 ('151', 'aioseop_options', 'a:76:{s:16:\"aiosp_home_title\";N;s:22:\"aiosp_home_description\";s:0:\"\";s:20:\"aiosp_togglekeywords\";i:1;s:19:\"aiosp_home_keywords\";N;s:26:\"aiosp_use_static_home_info\";i:0;s:9:\"aiosp_can\";i:1;s:30:\"aiosp_no_paged_canonical_links\";i:0;s:20:\"aiosp_force_rewrites\";i:1;s:24:\"aiosp_use_original_title\";i:0;s:28:\"aiosp_home_page_title_format\";s:12:\"%page_title%\";s:23:\"aiosp_page_title_format\";s:27:\"%page_title% | %site_title%\";s:23:\"aiosp_post_title_format\";s:27:\"%post_title% | %site_title%\";s:27:\"aiosp_category_title_format\";s:31:\"%category_title% | %site_title%\";s:26:\"aiosp_archive_title_format\";s:30:\"%archive_title% | %site_title%\";s:23:\"aiosp_date_title_format\";s:21:\"%date% | %site_title%\";s:25:\"aiosp_author_title_format\";s:23:\"%author% | %site_title%\";s:22:\"aiosp_tag_title_format\";s:20:\"%tag% | %site_title%\";s:25:\"aiosp_search_title_format\";s:23:\"%search% | %site_title%\";s:24:\"aiosp_description_format\";s:13:\"%description%\";s:22:\"aiosp_404_title_format\";s:46:\"%request_words% に何も見つかりません\";s:18:\"aiosp_paged_format\";s:19:\" - パート %page%\";s:17:\"aiosp_cpostactive\";a:2:{i:0;s:4:\"post\";i:1;s:4:\"page\";}s:18:\"aiosp_cpostnoindex\";a:0:{}s:19:\"aiosp_cpostnofollow\";a:0:{}s:21:\"aiosp_posttypecolumns\";a:2:{i:0;s:4:\"post\";i:1;s:4:\"page\";}s:19:\"aiosp_google_verify\";s:0:\"\";s:17:\"aiosp_bing_verify\";s:0:\"\";s:22:\"aiosp_pinterest_verify\";s:0:\"\";s:19:\"aiosp_yandex_verify\";s:0:\"\";s:18:\"aiosp_baidu_verify\";s:0:\"\";s:25:\"aiosp_google_analytics_id\";N;s:25:\"aiosp_ga_advanced_options\";s:2:\"on\";s:15:\"aiosp_ga_domain\";N;s:21:\"aiosp_ga_multi_domain\";i:0;s:21:\"aiosp_ga_addl_domains\";N;s:21:\"aiosp_ga_anonymize_ip\";N;s:28:\"aiosp_ga_display_advertising\";N;s:22:\"aiosp_ga_exclude_users\";N;s:29:\"aiosp_ga_track_outbound_links\";i:0;s:25:\"aiosp_ga_link_attribution\";i:0;s:27:\"aiosp_ga_enhanced_ecommerce\";i:0;s:19:\"aiosp_schema_markup\";s:1:\"0\";s:32:\"aiosp_schema_search_results_page\";s:1:\"1\";s:33:\"aiosp_schema_social_profile_links\";s:0:\"\";s:28:\"aiosp_schema_site_represents\";s:12:\"organization\";s:30:\"aiosp_schema_organization_name\";s:0:\"\";s:30:\"aiosp_schema_organization_logo\";s:0:\"\";s:24:\"aiosp_schema_person_user\";s:1:\"1\";s:25:\"aiosp_schema_phone_number\";s:0:\"\";s:25:\"aiosp_schema_contact_type\";s:4:\"none\";s:20:\"aiosp_use_categories\";i:0;s:26:\"aiosp_use_tags_as_keywords\";i:1;s:32:\"aiosp_dynamic_postspage_keywords\";i:1;s:22:\"aiosp_category_noindex\";i:1;s:26:\"aiosp_archive_date_noindex\";i:1;s:28:\"aiosp_archive_author_noindex\";i:1;s:18:\"aiosp_tags_noindex\";i:0;s:20:\"aiosp_search_noindex\";i:0;s:17:\"aiosp_404_noindex\";i:0;s:17:\"aiosp_tax_noindex\";a:0:{}s:23:\"aiosp_paginated_noindex\";i:0;s:24:\"aiosp_paginated_nofollow\";i:0;s:27:\"aiosp_generate_descriptions\";i:0;s:18:\"aiosp_skip_excerpt\";i:0;s:20:\"aiosp_run_shortcodes\";i:0;s:33:\"aiosp_hide_paginated_descriptions\";i:0;s:32:\"aiosp_dont_truncate_descriptions\";i:0;s:20:\"aiosp_unprotect_meta\";i:0;s:33:\"aiosp_redirect_attachement_parent\";i:0;s:14:\"aiosp_ex_pages\";s:0:\"\";s:20:\"aiosp_post_meta_tags\";s:0:\"\";s:20:\"aiosp_page_meta_tags\";s:0:\"\";s:21:\"aiosp_front_meta_tags\";s:0:\"\";s:20:\"aiosp_home_meta_tags\";s:0:\"\";s:12:\"aiosp_do_log\";N;s:19:\"last_active_version\";s:5:\"3.2.3\";}', 'yes'),
 ('159', '_site_transient_timeout_browser_c18bb69d14a8084787fb2d2bf00b6fbd', '1566345781', 'no'),
@@ -359,10 +359,10 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 ('189', '_site_transient_timeout_aioseop_update_check_time', '1565845276', 'no'),
 ('190', '_site_transient_aioseop_update_check_time', '1565823676', 'no'),
 ('194', '_site_transient_update_core', 'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:62:\"https://downloads.wordpress.org/release/ja/wordpress-5.2.2.zip\";s:6:\"locale\";s:2:\"ja\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:62:\"https://downloads.wordpress.org/release/ja/wordpress-5.2.2.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.2.2\";s:7:\"version\";s:5:\"5.2.2\";s:11:\"php_version\";s:6:\"5.6.20\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1565826488;s:15:\"version_checked\";s:5:\"5.2.2\";s:12:\"translations\";a:0:{}}', 'no'),
-('195', '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1565823697;s:7:\"checked\";a:1:{s:3:\"shousei\";s:5:\"1.0.0\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
+('195', '_site_transient_update_themes', 'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1565823697;s:7:\"checked\";a:1:{s:3:\"starter\";s:5:\"1.0.0\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}}', 'no'),
 ('196', '_site_transient_update_plugins', 'O:8:\"stdClass\":5:{s:12:\"last_checked\";i:1565823699;s:7:\"checked\";a:8:{s:19:\"akismet/akismet.php\";s:5:\"4.1.2\";s:43:\"all-in-one-seo-pack/all_in_one_seo_pack.php\";s:5:\"3.2.3\";s:33:\"classic-editor/classic-editor.php\";s:3:\"1.5\";s:13:\"cmb2/init.php\";s:5:\"2.6.0\";s:36:\"google-sitemap-generator/sitemap.php\";s:5:\"4.1.0\";s:23:\"siteguard/siteguard.php\";s:5:\"1.4.3\";s:41:\"wordpress-importer/wordpress-importer.php\";s:5:\"0.6.4\";s:41:\"wp-multibyte-patch/wp-multibyte-patch.php\";s:5:\"2.8.2\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:8:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.2\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}}s:43:\"all-in-one-seo-pack/all_in_one_seo_pack.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:33:\"w.org/plugins/all-in-one-seo-pack\";s:4:\"slug\";s:19:\"all-in-one-seo-pack\";s:6:\"plugin\";s:43:\"all-in-one-seo-pack/all_in_one_seo_pack.php\";s:11:\"new_version\";s:5:\"3.2.3\";s:3:\"url\";s:50:\"https://wordpress.org/plugins/all-in-one-seo-pack/\";s:7:\"package\";s:68:\"https://downloads.wordpress.org/plugin/all-in-one-seo-pack.3.2.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:72:\"https://ps.w.org/all-in-one-seo-pack/assets/icon-256x256.png?rev=2075006\";s:2:\"1x\";s:72:\"https://ps.w.org/all-in-one-seo-pack/assets/icon-128x128.png?rev=2075006\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:75:\"https://ps.w.org/all-in-one-seo-pack/assets/banner-1544x500.png?rev=1354894\";s:2:\"1x\";s:74:\"https://ps.w.org/all-in-one-seo-pack/assets/banner-772x250.png?rev=1354894\";}s:11:\"banners_rtl\";a:0:{}}s:33:\"classic-editor/classic-editor.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:28:\"w.org/plugins/classic-editor\";s:4:\"slug\";s:14:\"classic-editor\";s:6:\"plugin\";s:33:\"classic-editor/classic-editor.php\";s:11:\"new_version\";s:3:\"1.5\";s:3:\"url\";s:45:\"https://wordpress.org/plugins/classic-editor/\";s:7:\"package\";s:61:\"https://downloads.wordpress.org/plugin/classic-editor.1.5.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-256x256.png?rev=1998671\";s:2:\"1x\";s:67:\"https://ps.w.org/classic-editor/assets/icon-128x128.png?rev=1998671\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:70:\"https://ps.w.org/classic-editor/assets/banner-1544x500.png?rev=1998671\";s:2:\"1x\";s:69:\"https://ps.w.org/classic-editor/assets/banner-772x250.png?rev=1998676\";}s:11:\"banners_rtl\";a:0:{}}s:13:\"cmb2/init.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:18:\"w.org/plugins/cmb2\";s:4:\"slug\";s:4:\"cmb2\";s:6:\"plugin\";s:13:\"cmb2/init.php\";s:11:\"new_version\";s:5:\"2.6.0\";s:3:\"url\";s:35:\"https://wordpress.org/plugins/cmb2/\";s:7:\"package\";s:47:\"https://downloads.wordpress.org/plugin/cmb2.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:57:\"https://ps.w.org/cmb2/assets/icon-256x256.png?rev=1081087\";s:2:\"1x\";s:57:\"https://ps.w.org/cmb2/assets/icon-128x128.png?rev=1081087\";}s:7:\"banners\";a:2:{s:2:\"2x\";s:60:\"https://ps.w.org/cmb2/assets/banner-1544x500.png?rev=1081087\";s:2:\"1x\";s:59:\"https://ps.w.org/cmb2/assets/banner-772x250.png?rev=1081087\";}s:11:\"banners_rtl\";a:0:{}}s:36:\"google-sitemap-generator/sitemap.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:38:\"w.org/plugins/google-sitemap-generator\";s:4:\"slug\";s:24:\"google-sitemap-generator\";s:6:\"plugin\";s:36:\"google-sitemap-generator/sitemap.php\";s:11:\"new_version\";s:5:\"4.1.0\";s:3:\"url\";s:55:\"https://wordpress.org/plugins/google-sitemap-generator/\";s:7:\"package\";s:73:\"https://downloads.wordpress.org/plugin/google-sitemap-generator.4.1.0.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:77:\"https://ps.w.org/google-sitemap-generator/assets/icon-256x256.png?rev=1701944\";s:2:\"1x\";s:77:\"https://ps.w.org/google-sitemap-generator/assets/icon-128x128.png?rev=1701944\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:79:\"https://ps.w.org/google-sitemap-generator/assets/banner-772x250.png?rev=1701944\";}s:11:\"banners_rtl\";a:0:{}}s:23:\"siteguard/siteguard.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:23:\"w.org/plugins/siteguard\";s:4:\"slug\";s:9:\"siteguard\";s:6:\"plugin\";s:23:\"siteguard/siteguard.php\";s:11:\"new_version\";s:5:\"1.4.3\";s:3:\"url\";s:40:\"https://wordpress.org/plugins/siteguard/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/plugin/siteguard.1.4.3.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:62:\"https://ps.w.org/siteguard/assets/icon-256x256.png?rev=1011863\";s:2:\"1x\";s:62:\"https://ps.w.org/siteguard/assets/icon-128x128.png?rev=1011863\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:64:\"https://ps.w.org/siteguard/assets/banner-772x250.png?rev=1011863\";}s:11:\"banners_rtl\";a:0:{}}s:41:\"wordpress-importer/wordpress-importer.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:32:\"w.org/plugins/wordpress-importer\";s:4:\"slug\";s:18:\"wordpress-importer\";s:6:\"plugin\";s:41:\"wordpress-importer/wordpress-importer.php\";s:11:\"new_version\";s:5:\"0.6.4\";s:3:\"url\";s:49:\"https://wordpress.org/plugins/wordpress-importer/\";s:7:\"package\";s:67:\"https://downloads.wordpress.org/plugin/wordpress-importer.0.6.4.zip\";s:5:\"icons\";a:3:{s:2:\"2x\";s:71:\"https://ps.w.org/wordpress-importer/assets/icon-256x256.png?rev=1908375\";s:2:\"1x\";s:63:\"https://ps.w.org/wordpress-importer/assets/icon.svg?rev=1908375\";s:3:\"svg\";s:63:\"https://ps.w.org/wordpress-importer/assets/icon.svg?rev=1908375\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:72:\"https://ps.w.org/wordpress-importer/assets/banner-772x250.png?rev=547654\";}s:11:\"banners_rtl\";a:0:{}}s:41:\"wp-multibyte-patch/wp-multibyte-patch.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:32:\"w.org/plugins/wp-multibyte-patch\";s:4:\"slug\";s:18:\"wp-multibyte-patch\";s:6:\"plugin\";s:41:\"wp-multibyte-patch/wp-multibyte-patch.php\";s:11:\"new_version\";s:5:\"2.8.2\";s:3:\"url\";s:49:\"https://wordpress.org/plugins/wp-multibyte-patch/\";s:7:\"package\";s:67:\"https://downloads.wordpress.org/plugin/wp-multibyte-patch.2.8.2.zip\";s:5:\"icons\";a:1:{s:7:\"default\";s:62:\"https://s.w.org/plugins/geopattern-icon/wp-multibyte-patch.svg\";}s:7:\"banners\";a:0:{}s:11:\"banners_rtl\";a:0:{}}}}', 'no'),
 ('199', '_site_transient_timeout_theme_roots', '1565827745', 'no'),
-('200', '_site_transient_theme_roots', 'a:1:{s:3:\"shousei\";s:7:\"/themes\";}', 'no'),
+('200', '_site_transient_theme_roots', 'a:1:{s:3:\"starter\";s:7:\"/themes\";}', 'no'),
 ('201', 'news_category_children', 'a:0:{}', 'yes');
 
 INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES ('1', '2', '_wp_page_template', 'default'),
@@ -377,17 +377,17 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 ('10', '12', '_edit_lock', '1565823728:1'),
 ('11', '35', '_edit_last', '1'),
 ('12', '35', '_edit_lock', '1565834148:1'),
-('13', '35', 'shousei_number', '001'),
-('14', '35', 'shousei_description', 'テキスト'),
+('13', '35', 'starter_number', '001'),
+('14', '35', 'starter_description', 'テキスト'),
 ('15', '36', '_wp_attached_file', '2019/08/elephant.png'),
 ('16', '36', '_wp_attachment_metadata', 'a:5:{s:5:\"width\";i:480;s:6:\"height\";i:400;s:4:\"file\";s:20:\"2019/08/elephant.png\";s:5:\"sizes\";a:2:{s:9:\"thumbnail\";a:4:{s:4:\"file\";s:20:\"elephant-150x150.png\";s:5:\"width\";i:150;s:6:\"height\";i:150;s:9:\"mime-type\";s:9:\"image/png\";}s:6:\"medium\";a:4:{s:4:\"file\";s:20:\"elephant-300x250.png\";s:5:\"width\";i:300;s:6:\"height\";i:250;s:9:\"mime-type\";s:9:\"image/png\";}}s:10:\"image_meta\";a:12:{s:8:\"aperture\";s:1:\"0\";s:6:\"credit\";s:0:\"\";s:6:\"camera\";s:0:\"\";s:7:\"caption\";s:0:\"\";s:17:\"created_timestamp\";s:1:\"0\";s:9:\"copyright\";s:0:\"\";s:12:\"focal_length\";s:1:\"0\";s:3:\"iso\";s:1:\"0\";s:13:\"shutter_speed\";s:1:\"0\";s:5:\"title\";s:0:\"\";s:11:\"orientation\";s:1:\"0\";s:8:\"keywords\";a:0:{}}}'),
 ('17', '35', '_thumbnail_id', '36'),
 ('18', '37', '_edit_last', '1'),
 ('19', '37', '_edit_lock', '1565834002:1'),
 ('20', '37', '_thumbnail_id', '36'),
-('21', '37', 'shousei_position', '代表'),
-('22', '37', 'shousei_main_company_name', '社団法人ジャパンチャレンジャー'),
-('23', '37', 'shousei_main_company_position', 'プロジェクト代表'),
+('21', '37', 'starter_position', '代表'),
+('22', '37', 'starter_main_company_name', '社団法人ジャパンチャレンジャー'),
+('23', '37', 'starter_main_company_position', 'プロジェクト代表'),
 ('24', '38', '_edit_lock', '1565836455:1'),
 ('25', '38', '_edit_last', '1'),
 ('26', '40', '_edit_last', '1'),
@@ -435,10 +435,10 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 ('40', '1', '2019-08-15 11:24:35', '2019-08-15 02:24:35', 'TEXT', '銚子大会', '', 'publish', 'closed', 'closed', '', '%e9%8a%9a%e5%ad%90%e5%a4%a7%e4%bc%9a', '', '', '2019-08-15 11:24:35', '2019-08-15 02:24:35', '', '0', 'http://localhost/?post_type=award&#038;p=40', '0', 'award', '', '0'),
 ('41', '1', '2019-08-15 11:33:47', '2019-08-15 02:33:47', '計画地域', 'AWARD', '', 'inherit', 'closed', 'closed', '', '38-revision-v1', '', '', '2019-08-15 11:33:47', '2019-08-15 02:33:47', '', '38', 'http://localhost/38-revision-v1/', '0', 'revision', '', '0');
 
-INSERT INTO `wp_siteguard_history` (`id`, `login_name`, `ip_address`, `operation`, `time`, `type`) VALUES ('1', 'shousei', '172.21.0.1', '0', '2019-08-14 09:02:53', '0'),
-('2', 'shousei', '172.22.0.1', '0', '2019-08-14 18:26:04', '0'),
-('3', 'shousei', '172.24.0.1', '1', '2019-08-15 10:19:13', '0'),
-('4', 'shousei', '172.24.0.1', '0', '2019-08-15 10:19:28', '0');
+INSERT INTO `wp_siteguard_history` (`id`, `login_name`, `ip_address`, `operation`, `time`, `type`) VALUES ('1', 'starter', '172.21.0.1', '0', '2019-08-14 09:02:53', '0'),
+('2', 'starter', '172.22.0.1', '0', '2019-08-14 18:26:04', '0'),
+('3', 'starter', '172.24.0.1', '1', '2019-08-15 10:19:13', '0'),
+('4', 'starter', '172.24.0.1', '0', '2019-08-15 10:19:28', '0');
 
 INSERT INTO `wp_siteguard_login` (`ip_address`, `status`, `count`, `last_login_time`) VALUES ('172.24.0.1', '1', '1', '2019-08-15 10:19:13');
 
@@ -451,7 +451,7 @@ INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `desc
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES ('1', '未分類', '%e6%9c%aa%e5%88%86%e9%a1%9e', '0'),
 ('2', '募集', '%e5%8b%9f%e9%9b%86', '0');
 
-INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES ('1', '1', 'nickname', 'shousei'),
+INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES ('1', '1', 'nickname', 'starter'),
 ('2', '1', 'first_name', ''),
 ('3', '1', 'last_name', ''),
 ('4', '1', 'description', ''),
@@ -471,7 +471,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 ('18', '1', 'wp_user-settings', 'editor=html&libraryContent=browse'),
 ('19', '1', 'wp_user-settings-time', '1565832844');
 
-INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('1', 'shousei', '$P$BmNqJz2sw6Zk.Z59qxx8DxnOkonD3E1', 'shousei', 'shousei@example.com', '', '2019-08-13 23:38:49', '', '0', 'shousei');
+INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('1', 'starter', '$P$BmNqJz2sw6Zk.Z59qxx8DxnOkonD3E1', 'starter', 'starter@example.com', '', '2019-08-13 23:38:49', '', '0', 'starter');
 
 
 

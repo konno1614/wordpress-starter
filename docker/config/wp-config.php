@@ -26,16 +26,16 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define( 'DB_NAME', 'shousei_db' );
+define( 'DB_NAME', 'starter_db' );
 
 /** MySQL データベースのユーザー名 */
-define( 'DB_USER', 'shousei_user' );
+define( 'DB_USER', 'starter_user' );
 
 /** MySQL データベースのパスワード */
 define( 'DB_PASSWORD', 'passw0rd' );
 
 /** MySQL のホスト名 */
-define( 'DB_HOST', 'shousei-db' );
+define( 'DB_HOST', 'starter-db' );
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -92,6 +92,6 @@ if ( !defined('ABSPATH') )
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
 
-// For Shousei
+// For starter
 define('FORM_CONTACT_ID', 'CF5deeefe2d1071');
 define('USE_MAIL_CATCHER', true);
