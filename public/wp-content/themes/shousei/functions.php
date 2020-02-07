@@ -195,11 +195,6 @@ add_action('wp_dashboard_setup', 'remove_dashboard_widget');
 
 require get_template_directory() . '/post-types/topics.php';
 require get_template_directory() . '/taxonomies/topics_category.php';
-require get_template_directory() . '/post-types/works.php';
-require get_template_directory() . '/post-types/interview.php';
-require get_template_directory() . '/taxonomies/interview_category.php';
-require get_template_directory() . '/post-types/faq.php';
-require get_template_directory() . '/post-types/member.php';
 require __DIR__ . '/cmb2/init.php';
 
 
