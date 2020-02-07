@@ -1,5 +1,0 @@
-$theme_directory: '/wp-content/themes/sample-wordpress';
-
-@function get_theme_file_url($path) {
-  @return url($theme_directory+'/'+$path);
-}
