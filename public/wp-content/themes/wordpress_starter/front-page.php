@@ -13,8 +13,11 @@ get_header();
 ?>
 
 <div class="c-top">
-	フロントページです。
+	フロントページです。フロントページです。
 </div>
+
+<!-- テンプレート読み込み -->
+<?php get_template_part('template-parts/nav/pc-nav') ?>
 
 <?php
 get_footer();

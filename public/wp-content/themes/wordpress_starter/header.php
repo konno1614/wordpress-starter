@@ -36,6 +36,7 @@
 
 	<header id="masthead" class="o-header">
 		<p>ヘッダーです。</p>
+		<p>ヘッダーです。</p>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
