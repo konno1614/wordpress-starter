@@ -1,5 +1,6 @@
 .o-header {
 	padding: 10% 0;
+	border: 3px dashed #b10d0d;
 	@include media-breakpoint-down(sm) {
 	}
 }

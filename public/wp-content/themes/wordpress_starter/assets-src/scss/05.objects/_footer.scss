@@ -1,5 +1,6 @@
 .o-footer {
 	padding: 10% 0;
+	border: 3px dashed #0d5ebb;
 	@include media-breakpoint-down(sm) {
 	}
 }

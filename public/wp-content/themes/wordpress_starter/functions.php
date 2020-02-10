@@ -145,7 +145,6 @@ add_action( 'wp_enqueue_scripts', 'starter_scripts' );
 function add_css_scripts() {
     // assets/css読み込み
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/common.css');
-	wp_enqueue_style( 'colorbox-css', get_template_directory_uri() . '/assets-other/css/colorbox.css');
 	// assets/js読み込み
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/common.js', array( 'jquery' ), '', true );
 }
