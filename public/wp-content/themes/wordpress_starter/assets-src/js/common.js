@@ -2,6 +2,7 @@ import $ from 'jquery'
 import './lib/Mobile-Nav'
 import './lib/Page-Top'
 import './lib/Slider'
+import './lib/Kv'
 
 window.addEventListener('load', () => {
 	/**
