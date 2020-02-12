@@ -8,24 +8,27 @@
 		width: 100%;
 		overflow: hidden;
 		position: absolute;
-		background-image: url(../img/common/background-sample.jpg);
+		background-image: url(../img/common/background-sample01.jpg);
 		background-size: cover;
 		background-position: top;
 		-webkit-filter: blur(6px); /* Safari 6.0 - 9.0 */
 		filter: blur(6px);
-		opacity: 0.1;
+		opacity: 0.5;
 		z-index: -1;
 	}
 
 	&__blob-cont {
-		position: absolute;
+		position: relative;
 		// width: 100vw;
 		// height: 100vh;
 		width: 100%;
 		height: 100%;
 
 		image {
-
+			top: 0;
+			left: 0;
+			position: absolute;
+			filter: blur(6px);
 		}
 	}
 
@@ -48,19 +51,21 @@
 	}
 
 	.HeroText {
-		font-size: 200rem;
 		stroke: white;
 		fill: white;
-		animation-name: text;
-		animation-duration: 15s;
-		animation-timing-function: ease;
-		animation-delay: 3s;
+		animation-name: kv_C;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+		animation-delay: 1s;
 		animation-iteration-count: infinite;
 		transform-origin: center center;
 		transform-box: fill-box;
 
-		@keyframes text {
+		@keyframes kv_C {
 			0%   { transform: rotate( 0deg ); }
+			25%   { transform: rotate( -90deg ); }
+			50%   { transform: rotate( -180deg ); }
+			75%   { transform: rotate( -270deg ); }
 			100% { transform: rotate( -360deg ); }
 		}
 	}
